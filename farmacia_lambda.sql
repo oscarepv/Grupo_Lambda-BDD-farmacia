@@ -52,3 +52,41 @@ fechainicio date,
 fechafin date
 
 )
+
+create table cliente (
+
+idClliente  nvarchar(4) primary key,
+nombCliente  nvarchar(25)not null,
+apellidoCliente nvarchar(25)not null,
+cedulaCliente nvarchar (10)not null,
+telefonoClient nvarchar (15) not null,
+dierccionClienta nvarchar (50) not null
+
+)
+
+create table empleados(
+
+idEmpleado varchar(4) primary key,
+nombEmpleado  varchar(25)not null,
+apellidoEmpleado nvarchar(25)not null,
+cedulaEmpleado varchar(25)not null,
+direccionEmpleado nvarchar (50) not null
+
+)
+
+create table sucural (
+
+idSucursal nvarchar (4) not null,
+nombSucursal nvarchar (20) not null,
+direcionSucursal nvarchar (20) not null,
+rucSusursal nvarchar (50) not null
+
+)
+
+create table proveedores (
+idProveedor nvarchar (4) not null,
+nombProveedor nvarchar (20) not null,
+telefProveedor nvarchar (20) not null, 
+rucProveedor nvarchar (50) not null
+
+)
